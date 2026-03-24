@@ -18,7 +18,10 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.24.x"   # ⚠️ 项目要求版本
+          flutter-version: "3.24.3"
+      
+      - name: Check Flutter Version
+        run: flutter --version
 
       - name: Enable Windows Desktop
         run: flutter config --enable-windows-desktop
